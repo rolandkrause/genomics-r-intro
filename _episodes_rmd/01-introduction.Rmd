@@ -36,19 +36,6 @@ knitr_fig_path("01-")
 In this lesson we will take you through the very first things you need to get
 R working.
 
-> ## Tip: This lesson works best on the cloud
->
-> Remember, these lessons assume we are using the pre-configured virtual machine
-> instances provided to you at a genomics workshop. Much of this work could be
-> done on your laptop, but we use instances to simplify workshop setup
-> requirements, and to get you familiar with using the cloud (a common
-> requirement for working with big data).
-> Visit the [Genomics Workshop setup page](http://www.datacarpentry.org/genomics-workshop/setup.html)
-> for details on getting this instance running on your own, or for the info you
-> need to do this on your own computer.
-{: .callout}
-
-
 ## A Brief History of R
 
 [R](https://en.wikipedia.org/wiki/R_(programming_language)) has been around
@@ -87,39 +74,7 @@ analyzing data in R:
 {: .discussion}
 
 
-## Introducing RStudio Server
-
-In these lessons, we will be making use of a software called [RStudio](https://www.rstudio.com/products/RStudio/),
-an [Integrated Development Environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment).
-RStudio, like most IDEs, provides a graphical interface to R, making it more
-user-friendly, and providing dozens of useful features. We will introduce
-additional benefits of using RStudio as you cover the lessons. In this case,
-we are specifically using [RStudio Server](https://www.rstudio.com/products/RStudio/#Server),
-a version of RStudio that can be accessed in your web browser. RStudio Server
-has the same features of the Desktop version of RStudio you could download as
-standalone software.
-
-## Log on to RStudio Server
-
-Open a web browser and enter the IP address of your instance 
-(provided by your instructors), followed by
-`:8787`. For example, if your IP address was 123.45.67.89 your URL would be
-
-```
-http://123.45.67.89:8787
-```
-
-> ## Tip: Make sure there are no spaces before or after your URL or
-> your web browser may interpret it as a search query.
-{: .callout}
-
-You should now be looking at a page that will allow you to login to the RStudio
-server:
-
-<img src="../fig/rstudio_login_screen.png" alt="rstudio default session" style="width: 1000px;"/>
-
-Enter your user credentials and click <kbd>Sign In</kbd>. The credentials for
-the genomics Data Carpentry instances will be provided by your instructors. 
+ 
 
 You should now see the RStudio interface:
 
@@ -150,20 +105,7 @@ pane (more about the RStudio layout in a moment), you should see an RStudio
  project file, **dc_genomics_r.Rroj**. All RStudio projects end with the
  "**.Rproj**" file extension.
 
->## Tip: Make your project more reproducible with Packrat
-> One of the most wonderful and also frustrating aspects of working with R is
-> managing packages. We will talk more about them, but packages (e.g. ggplot2)
-> are add-ons that extend what you can do with R. Unfortunately it is very
-> common that you may run into versions of R and/or R packages that are not
-> compatible. This may make it difficult for someone to run your R script using
-> their version of R or a given R package, and/or make it more difficult to run
-> their scripts on your machine. [Packrat](https://rstudio.github.io/packrat/)
-> is an RStudio add-on that will associate your packages and project so that
-> your work is more portable and reproducible. To turn on Packrat click on
-> the <KBD>Tools</KBD> menu and select <KBD>Project Options</KBD>. Under
-> **Packrat** check off "**Use packrat with this project**" and follow any
-> installation instructions.
-{: .callout}
+
 
 ## Creating your first R script
 
