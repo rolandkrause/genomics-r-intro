@@ -33,7 +33,7 @@ variants <- read.csv("https://ndownloader.figshare.com/files/14632895")
 
 Bracket subsetting is handy, but it can be cumbersome and difficult to read, especially for complicated operations. 
 
-Luckily, the [`dplyr`](https://cran.r-project.org/package=dplyr
+Luckily, the [`dplyr`](https://cran.r-project.org/package=dplyr)
 package provides a number of very useful functions for manipulating dataframes
 in a way that will reduce repetition, reduce the probability of making
 errors, and probably even save you some typing. As an added bonus, you might
@@ -48,13 +48,17 @@ pipes (`%>%`) to combine them.
 4. `summarize()`
 5. `mutate()`
 
+## Packages 
+
 Packages in R are sets of additional functions that let you do more
 stuff in R. The functions we've been using, like `str()`, come built into R;
 packages give you access to more functions. You need to install a package and
-then load it to be able to use it.
+then load it to be able to use it. The **`tidverse`** package is a package of packages comprising many useful packages that use the pipe operator and share other commonalities. **`ggplot2`** is another package that we see later. If you prepared the training, **`tidverse`** should already be installed.
 
 ```{r, eval = FALSE, purl = FALSE}
 install.packages("dplyr") ## install
+
+install.packages("tidyverse") ## install
 ```
 
 You might get asked to choose a CRAN mirror -- this is asking you to
@@ -69,7 +73,7 @@ every time you open a new R session and want to use that package.
 
 ## What is dplyr?
 
-The package `dplyr` is a fairly new (2014) package that tries to provide easy
+The package `dplyr` is a package that tries to provide easy
 tools for the most common data manipulation tasks. It is built to work directly
 with data frames. The thinking behind it was largely inspired by the package
 `plyr` which has been in use for some time but suffered from being slow in some
